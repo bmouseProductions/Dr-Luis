@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="bg-banner flex flex-col p-6 lg:px-40 lg:pt-20 pb-10   justify-between gap-10  ">
       <div className="flex flex-col lg:flex-row justify-between gap-10">
         <div className="flex-1 flex flex-col gap-5 text-white">
-          <img src={Logo} alt="" className="w-[300px]" />
+          <img src={Logo} alt="" className="w-[200px] lg:w-[300px]" />
           <p className="text-sm">
             Ortopedista e traumatologista com especialização em ombro e
             cotovelo, experiência em hospitais renomados, supervisor de
