@@ -558,3 +558,7 @@ body {
 #Layer1 svg {
   fill: #ffffff !important;
 }
+
+p {
+  color: #6b6a6a !important;
+}
