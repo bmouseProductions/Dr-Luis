@@ -58,7 +58,7 @@ export const PosOperatorio = () => {
       </header>
       <ButtonUp></ButtonUp>
       <ButtonWhats></ButtonWhats>
-      <section className="lg:px-40 bg-white grid grid-cols-1 lg:grid-cols-3 py-10 lgap-10">
+      <section className="lg:px-40 bg-white grid grid-cols-1 lg:grid-cols-3 py-10 gap-10">
         {exercicios.map((item, index) => (
           <CardVideos
             key={index}
