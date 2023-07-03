@@ -1,6 +1,5 @@
 import Logo from "../../assets/img/logo-branca.png";
 import Down from "../../assets/img/chevron.png";
-import { Link } from "react-router-dom";
 
 export const Banner = () => {
   return (
