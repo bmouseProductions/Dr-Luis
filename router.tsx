@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home } from "./Home";
-import { PosOperatorio } from "./PosOperatorio";
+import { Home } from "./src/pages/Home";
+import { PosOperatorio } from "./src/pages/PosOperatorio";
 
 export const Router = createBrowserRouter([
   {
