@@ -1,6 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "../../assets/img/logo-branca.png";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -27,9 +28,9 @@ export default function Header() {
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
-                          <a
+                          <Link
                             key={item.name}
-                            href={item.href}
+                            to={item.href}
                             className={classNames(
                               item.current ? "text-white" : "text-gray-300 ",
                               "rounded-md px-3 py-2 text-sm font-medium"
@@ -37,7 +38,7 @@ export default function Header() {
                             aria-current={item.current ? "page" : undefined}
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
