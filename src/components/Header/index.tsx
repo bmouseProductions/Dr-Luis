@@ -3,8 +3,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "../../assets/img/logo-branca.png";
 
 const navigation = [
-  { name: "Home", href: "#", current: false },
-  { name: "Pós Operatório", href: "#", current: false },
+  { name: "Home", href: "/", current: false },
+  { name: "Pós Operatório", href: "/pos-operatorio", current: false },
 ];
 
 function classNames(...classes: string[]) {

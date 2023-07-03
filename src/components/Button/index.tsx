@@ -1,7 +1,7 @@
 export const Button = () => {
   return (
     <button className="button-principal ">
-      <p>Agende sua consulta</p>
+      <p className="text-white">Agende sua consulta</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
