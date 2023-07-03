@@ -647,3 +647,18 @@ body {
   opacity: 1;
   transition-delay: 0.25s;
 }
+
+.bg-teste {
+  content: "";
+  filter: brightness(0.5);
+  z-index: -1;
+  opacity: 50%;
+  background-color: #005c8a;
+}
+
+.bg-image {
+  background-image: url(../src/assets/img/department.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

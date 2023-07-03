@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
-  { name: "Pós Operatório", href: "/pos-operatorio", current: false },
+  { name: "Pos-Operatorio", href: "/pos-operatorio", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -32,8 +32,7 @@ export default function Header() {
                             key={item.name}
                             to={item.href}
                             className={classNames(
-                              item.current ? "text-white" : "text-gray-300 ",
-                              "rounded-md px-3 py-2 text-sm font-medium"
+                              "rounded-md px-3 py-2 text-sm font-bold text-white"
                             )}
                             aria-current={item.current ? "page" : undefined}
                           >

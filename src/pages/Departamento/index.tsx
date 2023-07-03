@@ -50,13 +50,13 @@ export const Departamento = () => {
   ];
 
   return (
-    <div className="bg-white px-6 lg:px-80 lg:py-20 flex flex-col gap-10">
+    <div className=" px-6 lg:px-80 lg:py-20 flex flex-col gap-10">
       <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:items-end lg:justify-between ">
         <div className="lg:w-[50%] flex flex-col gap-5">
           <h1 className="text-3xl lg:text-5xl">
             Departamentos e Especializações
           </h1>
-          <p>
+          <p className="text-[#797968]">
             Oferecemos uma gama abrangente de especializações médicas para
             atender às necessidades de nossos pacientes.
           </p>
@@ -88,8 +88,8 @@ export const Departamento = () => {
           >
             <img src={item.image} alt="" className="w-[500px]" />
             <div className="p-5 lg:p-20 flex flex-col gap-5">
-              <h4 className="text-3xl ">{item.title}</h4>
-              <p className="text-lg">{item.text}</p>
+              <h1 className="text-3xl h-10 ">{item.title}</h1>
+              <p className="text-lg text-[#797968]">{item.text}</p>
               <Button />
             </div>
           </div>

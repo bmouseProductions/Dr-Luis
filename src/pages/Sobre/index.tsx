@@ -3,7 +3,7 @@ import { Card } from "../../components/Card";
 
 export const Sobre = () => {
   return (
-    <div className="bg-white px-5 lg:px-40 py-20">
+    <div id="sobre" className="bg-white px-5 lg:px-40 py-20">
       <div className="flex flex-col items-center lg:flex-row gap-10 justify-center">
         <div className="mt-10 ">
           <Card></Card>
@@ -23,7 +23,7 @@ export const Sobre = () => {
             fundador da Associação Ortopédica brasileira de ultrassonografia
             musculoesquelética.
           </p>
-          <ul className="list-disc ms-5">
+          <ul className="list-disc ms-5 text-[#797968] font-semibold">
             <li className="">Especialista em Ortopedia e Traumatologia</li>
             <li>Subespecializado em cirurgia de ombro e cotovelo</li>
             <li>Membro da sociedade brasileira de ortopedia e traumatologia</li>

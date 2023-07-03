@@ -12,7 +12,7 @@ export const CardEspecializacao = ({ text, img }: Espec) => {
           alt=""
           className="bg-header rounded-full p-2  w-[70px] h-[70px] fill-white"
         />
-        <p>{text}</p>
+        <p className="text-[#797968]">{text}</p>
       </div>
       <div className="blob"></div>
     </div>

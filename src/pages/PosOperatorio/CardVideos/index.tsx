@@ -16,10 +16,12 @@ export const CardVideos = ({ title, exercicios }: Exercicios) => {
         ></iframe>
       </div>
       <div className="card_content">
-        <span className="card_title">{title}</span>
+        <h1 className="card_title h-8">{title}</h1>
         <span className="card_subtitle">
           {exercicios.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li className="font-semibold" key={index}>
+              {item}
+            </li>
           ))}
         </span>
         {/*      <p className="card_description">

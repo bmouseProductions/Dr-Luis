@@ -37,7 +37,7 @@ const infos = [
 export const Especializacao = () => {
   return (
     <>
-      <div className="bg-white pt-10 flex flex-col items-center gap-10 lg:px-40  lg:gap-0">
+      <div className=" pt-10 flex flex-col items-center gap-10 lg:px-40  lg:gap-0">
         <h1 className="px-6 text-3xl text-left lg:px-0 lg:h-36 lg:text-5xl lg:text-center lg:w-[700px]">
           Especialização em Ortopedia e Traumatologia de alta qualidade.
         </h1>

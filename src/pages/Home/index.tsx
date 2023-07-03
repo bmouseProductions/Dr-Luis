@@ -18,8 +18,10 @@ export const Home = () => {
       <ButtonUp></ButtonUp>
       <ButtonWhats></ButtonWhats>
       <Sobre></Sobre>
-      <Departamento></Departamento>
-      <Especializacao></Especializacao>
+      <div className="bg-image">
+        <Departamento></Departamento>
+        <Especializacao></Especializacao>
+      </div>
       <Consulta></Consulta>
       <Footer></Footer>
     </div>
