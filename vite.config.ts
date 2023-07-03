@@ -9,5 +9,5 @@ export default defineConfig({
       '@': '/src',
     }
   },
-  base: '/pos-operatorio'
+  base: '/'
 })
