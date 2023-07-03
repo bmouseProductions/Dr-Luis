@@ -1,6 +1,7 @@
 {
   "name": "dr-luis-site",
   "private": true,
+  "homepage": "https://main--clinquant-figolla-986d2b.netlify.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
