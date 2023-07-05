@@ -18,7 +18,7 @@ export const Footer = () => {
         <div className="flex-1 flex flex-col lg:items-center gap-3 text-white">
           <h4 className="text-2xl text-white">Contatos</h4>
           <a
-            className="text-sm flex flex-col text-left md:flex-row lg:flex-col lg:gap-1 xl:gap-0 xl:flex-row lg:justify-center lg:items-center lg:text-center"
+            className="text-sm flex flex-col text-left md:flex-row lg:flex-col lg:gap-1 xl:gap-0 xl:flex-row lg:justify-center lg:items-center lg:text-left"
             href="https://goo.gl/maps/NRjYnnjvp9HQjsNp7"
             target="_blank"
           >

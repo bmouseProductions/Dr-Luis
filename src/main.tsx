@@ -7,7 +7,8 @@ import { RouterProvider } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
-AOS.init();
+
+AOS.init({ easing: "ease-out-cubic", once: true, offset: 50 });
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

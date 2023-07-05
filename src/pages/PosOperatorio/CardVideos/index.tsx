@@ -15,20 +15,15 @@ export const CardVideos = ({ title, exercicios, iframeLink }: Exercicios) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
       </div>
-      <div className="card_content">
-        <h1 className="card_title h-8">{title}</h1>
-        <span className="card_subtitle">
+      <div className="card_content bg-slate-500">
+        <h1 className="card_title text-lg mb-2 pe-14 bg-green-500">{title}</h1>
+        <span className="card_subtitle ">
           {exercicios.map((item, index) => (
-            <li className="font-semibold" key={index}>
+            <li className="font-semibold text-sm" key={index}>
               {item}
             </li>
           ))}
         </span>
-        {/*      <p className="card_description">
-          Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut
-          dolor tempora aperiam itaque possimus at, cupiditate earum, quae
-          repudiandae aspernatur? Labore minus soluta consequatur placeat.
-        </p> */}
       </div>
     </article>
   );
