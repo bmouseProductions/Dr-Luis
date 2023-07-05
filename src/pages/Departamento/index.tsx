@@ -1,17 +1,20 @@
-import { ReactSVG } from "react-svg";
-
 import img1 from "../../assets/img/bmouseproductions_musculoskeletal_ultrasound__photo_realistic___67068797-0e63-4042-81be-b7522df234e9 (1).png";
 import img2 from "../../assets/img/bmouseproductions_doctor_performing_surgery_on_a_patients_shoul_0b5ca5e4-d9c0-4c36-9c3b-2c63bd439273.png";
 import img3 from "../../assets/img/bmouseproductions_doctor_taking_x-ray_of_a_knee__portrait__phot_0f18daf7-2ecd-4102-affa-074f88fe7fd3.png";
 import img4 from "../../assets/img/bmouseproductions_patient_doing_physical_rehabilitation_in_her__3d8884f2-38bd-47eb-b3f3-494161d926da.png";
 
-import icon1 from "../../assets/img/orthopedics.svg";
-import icon2 from "../../assets/img/articulation-bones.svg";
-import icon3 from "../../assets/img/ultrasonography.svg";
-import icon4 from "../../assets/img/esportivo (1).svg";
-
 import { useState } from "react";
 import { Button } from "../../components/Button";
+import { ReactSVG } from "react-svg";
+
+interface Item {
+  name: string;
+  icon: JSX.Element;
+  image: string;
+  title: string;
+  text: string;
+  isActive: boolean;
+}
 
 export const Departamento = () => {
   const [activeButton, setActiveButton] = useState("ortopedia");
@@ -20,34 +23,38 @@ export const Departamento = () => {
     setActiveButton(buttonName);
   };
 
-  const items = [
+  const items: Item[] = [
     {
       name: "ortopedia",
-      icon: <ReactSVG src={icon1} className="" />,
+      icon: <ReactSVG src="/orthopedics.svg" />,
       image: img1,
       title: "Ortopedia e Traumatologia",
       text: "Especialização em Ortopedia e Traumatologia pela Santa Casa de Misericórdia de Santos - SP. Experiência e conhecimento na área de ortopedia e traumatologia.",
+      isActive: activeButton === "ortopedia",
     },
     {
       name: "cirurgia",
-      icon: <ReactSVG src={icon2} className="" />,
+      icon: <ReactSVG src="/articulation-bones.svg" />,
       image: img2,
       title: "Cirurgia de Ombro e Cotovelo",
       text: "Subespecialização em Cirurgia de Ombro e Cotovelo pela Santa Casa de Misericórdia de Santos - SP. Experiência e conhecimento em cirurgias relacionadas ao ombro e cotovelo.",
+      isActive: activeButton === "cirurgia",
     },
     {
       name: "ultrassonografia",
-      icon: <ReactSVG src={icon3} className="" />,
+      icon: <ReactSVG src="/ultrasonography.svg" />,
       image: img3,
       title: "Ultrassonografia Musculoesquelética",
       text: "Membro fundador da Associação Ortopédica Brasileira de Ultrassonografia Musculoesquelética. Experiência e conhecimento em diagnóstico por ultrassonografia musculoesquelética.",
+      isActive: activeButton === "ultrassonografia",
     },
     {
       name: "ortopediaEsportiva",
-      icon: <ReactSVG src={icon4} className="" />,
+      icon: <ReactSVG src="/esportivo1.svg" />,
       image: img4,
       title: "Ortopedia e Traumatologia Esportiva",
       text: "Atendimento de atletas para prevenção e tratamento de lesões.",
+      isActive: activeButton === "ortopediaEsportiva",
     },
   ];
 
@@ -80,7 +87,13 @@ export const Departamento = () => {
             }`}
             onClick={() => handleClick(item.name)}
           >
-            <div className="w-[100px] h-[100px]">{item.icon}</div>
+            <div
+              className={`w-[100px] h-[100px] ${
+                item.isActive ? "active-icon" : ""
+              }`}
+            >
+              {item.icon}
+            </div>
 
             <h4 className="text-center">{item.title}</h4>
           </div>
@@ -109,3 +122,5 @@ export const Departamento = () => {
     </div>
   );
 };
+
+export default Departamento;

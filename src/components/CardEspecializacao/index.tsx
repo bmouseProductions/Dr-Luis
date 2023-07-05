@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { ReactSVG } from "react-svg";
 
 interface Espec {
   text: string;

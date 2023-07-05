@@ -421,6 +421,10 @@ body {
   letter-spacing: 0.05rem;
 }
 
+.active-icon {
+  color: #ffffff;
+}
+
 .text-body {
   font-size: 1.5em;
   text-align: center;

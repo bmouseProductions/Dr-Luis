@@ -1,38 +1,32 @@
 import { ReactSVG } from "react-svg";
 
 import { CardEspecializacao } from "../../components/CardEspecializacao";
-import img1 from "../../assets/img/ombroecotovelo.svg";
-import img2 from "../../assets/img/location.svg";
-import img3 from "../../assets/img/doctors.svg";
-import img4 from "../../assets/img/recuperation.svg";
-import img5 from "../../assets/img/medicaltechnology.svg";
-import img6 from "../../assets/img/medicalassociation.svg";
 
 const infos = [
   {
     text: "Experiência em Cirurgia de Ombro e Cotovelo altamente especializada.",
-    img: <ReactSVG src={img1} className="w-[70%] m-auto" />,
+    img: <ReactSVG src="/ombroecotovelo.svg" className="w-[70%] m-auto" />,
   },
   {
     text: "Atendimento personalizado e centrado no paciente.",
-    img: <ReactSVG src={img2} className="w-[70%] m-auto" />,
+    img: <ReactSVG src="/location.svg" className="w-[70%] m-auto" />,
   },
 
   {
     text: "Equipe multidisciplinar experiente e dedicada.",
-    img: <ReactSVG src={img3} className="w-[100%] m-auto mt-4" />,
+    img: <ReactSVG src="/doctors.svg" className="w-[100%] m-auto mt-4" />,
   },
   {
     text: "Compromisso com a recuperação e bem-estar dos pacientes.",
-    img: <ReactSVG src={img4} className="" />,
+    img: <ReactSVG src="/recuperation.svg" className="" />,
   },
   {
     text: "Utilização de tecnologias avançadas para diagnóstico e tratamento.",
-    img: <ReactSVG src={img5} className="w-[100%] m-auto" />,
+    img: <ReactSVG src="/medicaltechnology.svg" className="w-[100%] m-auto" />,
   },
   {
     text: "Membro ativo de associações renomadas na área.",
-    img: <ReactSVG src={img6} className="w-[90%] m-auto" />,
+    img: <ReactSVG src="/medicalassociation.svg" className="w-[90%] m-auto" />,
   },
 ];
 
