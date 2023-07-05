@@ -1,16 +1,16 @@
 interface Exercicios {
   title: string;
-  video: string;
   exercicios: string[];
+  iframeLink?: string;
 }
 
-export const CardVideos = ({ title, exercicios }: Exercicios) => {
+export const CardVideos = ({ title, exercicios, iframeLink }: Exercicios) => {
   return (
     <article className="card-video shadow-2xl m-auto">
       <div className="">
         <iframe
           className=""
-          src="https://www.youtube.com/embed/BEM2ku-sQsw"
+          src={iframeLink}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>

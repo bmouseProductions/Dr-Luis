@@ -1,7 +1,6 @@
 import Logo from "../../assets/img/logo-branca.png";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
 
 export const Footer = () => {
@@ -28,13 +27,20 @@ export const Footer = () => {
           </a>
           <ul className="flex gap-4 cursor-pointer">
             <li>
-              <AiFillFacebook size={25} />
+              <a
+                href="https://www.facebook.com/drluispauloramos"
+                target="_blank"
+              >
+                <AiFillFacebook size={25} />
+              </a>
             </li>
             <li>
-              <AiOutlineInstagram size={25} />
-            </li>
-            <li>
-              <AiFillLinkedin size={25} />
+              <a
+                href="https://www.instagram.com/drluispauloramos/"
+                target="_blank"
+              >
+                <AiOutlineInstagram size={25} />
+              </a>
             </li>
           </ul>
         </div>

@@ -16,14 +16,22 @@ const exercicios = [
       "Flexão 90 graus(murro) 4 x 10 repetições",
       "Extensão 90 graus (cotovelada) 4 x 10 repetições",
     ],
+    link: "https://www.youtube.com/embed/BEM2ku-sQsw",
   },
   {
     title: "Exercício para fortalecimento do Músculo Deltóide",
     exercicios: ["4 x 10 repetições"],
+    link: "https://www.youtube.com/embed/UCux_pww_AY",
   },
   {
     title: "Exercício para Fortalecimento do Músculo Bíceps Braquial",
     exercicios: ["4 x 10 repetições"],
+    link: "https://www.youtube.com/embed/ibT1V9JpRpc",
+  },
+  {
+    title: "Exercícios Domiciliares de Alongamento passivo do Ombro",
+    exercicios: ["4 x 10 repetições"],
+    link: "https://www.youtube.com/embed/w88DStVm_6Y",
   },
   {
     title: "Exercícios Pendulares",
@@ -33,14 +41,17 @@ const exercicios = [
       "Anteroposterior 4 x 20 repetições",
       "LateroLateral 4 x 20 repetições",
     ],
+    link: "https://www.youtube.com/embed/s1EBZ8CHAaY",
   },
   {
     title: "Rotação Lateral Passiva (cabo de vassoura)",
     exercicios: ["Rotação lateral 4 x 20 repetições"],
+    link: "https://www.youtube.com/embed/ZbCXiNpbgNA",
   },
   {
     title: "Elevação Passiva deitado ou na mesa",
     exercicios: ["Elevação deitada 4 x 20 repetições"],
+    link: "https://www.youtube.com/embed/w88DStVm_6Y",
   },
   {
     title: "Alongamento de Capsula posterior",
@@ -48,6 +59,7 @@ const exercicios = [
       "Rotação com auxílio de Toalha 4 x 20 segundos",
       "Alongamento deitado 4 x 20 segundos",
     ],
+    link: "https://www.youtube.com/embed/jb27AB6LKNQ",
   },
 ];
 
@@ -79,7 +91,7 @@ export const PosOperatorio = () => {
                 key={index}
                 title={item.title}
                 exercicios={item.exercicios}
-                video="asas"
+                iframeLink={item.link}
               />
             ))}
           </section>
