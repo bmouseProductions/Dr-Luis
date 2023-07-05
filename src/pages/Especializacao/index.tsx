@@ -1,44 +1,46 @@
+import { ReactSVG } from "react-svg";
+
 import { CardEspecializacao } from "../../components/CardEspecializacao";
 import img1 from "../../assets/img/ombroecotovelo.svg";
-import img2 from "../../assets/img/medico.png";
+import img2 from "../../assets/img/location.svg";
 import img3 from "../../assets/img/doctors.svg";
-import img4 from "../../assets/img/medico.png";
+import img4 from "../../assets/img/recuperation.svg";
 import img5 from "../../assets/img/medicaltechnology.svg";
 import img6 from "../../assets/img/medicalassociation.svg";
 
 const infos = [
   {
     text: "Experiência em Cirurgia de Ombro e Cotovelo altamente especializada.",
-    img: img1,
+    img: <ReactSVG src={img1} className="w-[70%] m-auto" />,
   },
   {
     text: "Atendimento personalizado e centrado no paciente.",
-    img: img2,
+    img: <ReactSVG src={img2} className="w-[70%] m-auto" />,
   },
 
   {
     text: "Equipe multidisciplinar experiente e dedicada.",
-    img: img3,
+    img: <ReactSVG src={img3} className="w-[100%] m-auto mt-4" />,
   },
   {
     text: "Compromisso com a recuperação e bem-estar dos pacientes.",
-    img: img4,
+    img: <ReactSVG src={img4} className="" />,
   },
   {
     text: "Utilização de tecnologias avançadas para diagnóstico e tratamento.",
-    img: img5,
+    img: <ReactSVG src={img5} className="w-[100%] m-auto" />,
   },
   {
     text: "Membro ativo de associações renomadas na área.",
-    img: img6,
+    img: <ReactSVG src={img6} className="w-[90%] m-auto" />,
   },
 ];
 
 export const Especializacao = () => {
   return (
     <>
-      <div className=" pt-10 flex flex-col items-center gap-10 lg:px-40  lg:gap-0">
-        <h1 className="px-6 text-3xl text-left lg:px-0 lg:h-36 lg:text-5xl lg:text-center lg:w-[700px]">
+      <div className=" pt-10 flex flex-col items-center gap-10 xl:px-40  xl:gap-0">
+        <h1 className="px-6 text-3xl lg:text-4xl text-left xl:px-0 xl:h-36 xl:text-5xl lg:text-center lg:w-[600px] xl:w-[700px]">
           Especialização em Ortopedia e Traumatologia de alta qualidade.
         </h1>
         <div className=" w-full pb-10 flex gap-10 overflow-x-auto lg:w-auto lg-gap-0 lg:overflow-x-hidden lg:grid lg:grid-cols-3 lg:px-40 lg:gap-10 lg:py-10 ">

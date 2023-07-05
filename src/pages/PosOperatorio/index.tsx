@@ -4,6 +4,8 @@ import { ButtonWhats } from "../../components/ButtonWhats";
 import { Footer } from "../../components/Footer";
 import Header from "../../components/Header";
 import { Banner } from "./Banner";
+import Loading from "../../components/Loading";
+import { useState, useEffect } from "react";
 
 const exercicios = [
   {
@@ -50,25 +52,40 @@ const exercicios = [
 ];
 
 export const PosOperatorio = () => {
+  const [carregado, setCarregado] = useState(false);
+
+  useEffect(() => {
+    // Simule um tempo de carregamento usando um setTimeout
+    setTimeout(() => {
+      setCarregado(true);
+    }, 3000); // Altere o valor aqui para ajustar a duração do carregamento
+  }, []);
+
   return (
-    <div className="">
-      <header className="bg-header">
-        <Header></Header>
-        <Banner></Banner>
-      </header>
-      <ButtonUp></ButtonUp>
-      <ButtonWhats></ButtonWhats>
-      <section className="lg:px-40 bg-white grid grid-cols-1 lg:grid-cols-3 py-10 gap-10">
-        {exercicios.map((item, index) => (
-          <CardVideos
-            key={index}
-            title={item.title}
-            exercicios={item.exercicios}
-            video="asas"
-          />
-        ))}
-      </section>
-      <Footer></Footer>
+    <div>
+      {!carregado ? (
+        <Loading />
+      ) : (
+        <div>
+          <header className="bg-header">
+            <Header></Header>
+            <Banner></Banner>
+          </header>
+          <ButtonUp></ButtonUp>
+          <ButtonWhats></ButtonWhats>
+          <section className="2xl:px-40 bg-white grid grid-cols-1   md:grid-cols-2 xl:grid-cols-3 py-10 gap-10">
+            {exercicios.map((item, index) => (
+              <CardVideos
+                key={index}
+                title={item.title}
+                exercicios={item.exercicios}
+                video="asas"
+              />
+            ))}
+          </section>
+          <Footer></Footer>
+        </div>
+      )}
     </div>
   );
 };

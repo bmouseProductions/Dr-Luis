@@ -3,13 +3,17 @@ import { Card } from "../../components/Card";
 
 export const Sobre = () => {
   return (
-    <div id="sobre" className="bg-white px-5 lg:px-40 py-20">
+    <div id="sobre" className="bg-white px-5 py-10 xl:px-40 xl:py-20">
       <div className="flex flex-col items-center lg:flex-row gap-10 justify-center">
-        <div className="mt-10 ">
+        <div data-aos="fade-right" data-aos-duration="2500" className="mt-10 ">
           <Card></Card>
         </div>
-        <div className="flex gap-4 justify-center flex-col lg:w-[40%]">
-          <h1 className="text-3xl lg:text-5xl">
+        <div
+          data-aos-duration="2500"
+          data-aos="fade-left"
+          className="flex gap-4 justify-center flex-col lg:w-[40%]"
+        >
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl">
             Meu nome é <br />{" "}
             <strong className="text-[#00337A]">Luis Paulo Ramos</strong>
           </h1>

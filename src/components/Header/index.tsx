@@ -15,7 +15,7 @@ function classNames(...classes: string[]) {
 export default function Header() {
   return (
     <>
-      <div className="min-h-full">
+      <div className="min-h-full" data-aos="fade-down">
         <Disclosure as="nav" className="fixed top-0 bg-header w-full z-50">
           {({ open }) => (
             <>

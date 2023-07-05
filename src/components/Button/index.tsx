@@ -1,7 +1,13 @@
 export const Button = () => {
   return (
     <button className="button-principal ">
-      <p className="text-white">Agende sua consulta</p>
+      <a
+        href="https://api.whatsapp.com/send?1=pt_BR&phone=5534992593669"
+        target="_blank"
+        className="text-white"
+      >
+        Agende sua consulta
+      </a>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

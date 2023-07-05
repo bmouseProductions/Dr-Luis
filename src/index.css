@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.especialidades svg {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.active svg {
+  fill: #ffffff;
+}
+
 h1,
 h2,
 h3 {
@@ -224,7 +233,7 @@ body {
   border-radius: 0.4em;
 }
 
-.button-principal p {
+.button-principal a {
   position: absolute;
   top: 0.7em;
   left: 14%;
@@ -246,7 +255,7 @@ body {
   fill: #fff;
 }
 
-.button-principal:hover p {
+.button-principal:hover a {
   left: 1em;
   color: #fff;
 }
@@ -439,6 +448,10 @@ body {
 .Emergency_contact-1::before {
   background-color: rgba(0, 94, 139, 0.8) !important;
   content: "";
+}
+
+.bg-1-emergency {
+  background-color: rgba(0, 94, 139, 0.8) !important;
 }
 
 /* line 17, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_emergency_contact.scss */
@@ -661,4 +674,34 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.loading svg polyline {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.loading svg polyline#back {
+  fill: none;
+  stroke: gray;
+}
+
+.loading svg polyline#front {
+  fill: none;
+  stroke: #005c8a;
+  stroke-dasharray: 48, 144;
+  stroke-dashoffset: 192;
+  animation: dash_682 1.4s linear infinite;
+}
+
+@keyframes dash_682 {
+  72.5% {
+    opacity: 0;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
 }
