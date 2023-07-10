@@ -448,11 +448,10 @@ body {
 
 /* line 4, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_emergency_contact.scss */
 .Emergency_contact-1 {
-  background-image: url(../src/assets/img/emergency_1.jpg);
+  background-image: url(../src/assets/img/back.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
 }
 
 .Emergency_contact-1::before {
