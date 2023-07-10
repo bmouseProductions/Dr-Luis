@@ -5,12 +5,13 @@ export const Consulta = () => {
     <div className="flex flex-col lg:flex-row relative">
       <div className="flex-1 Emergency_contact-1 flex items-center justify-start lg:h-[400px] xl:h-[500px]  ">
         <div
-          className="flex py-10 flex-col bg-black bg-opacity-10 backdrop-blur-sm transition-all duration-300 p-6 text-black
-         gap-4  w-[100%] lg:ps-10 xl:ps-40  lg:p-6  lg:w-[60%] xl:w-[60%] 2xl:w-[40%]"
+          className="flex py-10 flex-col 
+          justify-center bg-black bg-opacity-50 backdrop-blur-sm transition-all duration-300 p-6 text-black
+         gap-4 w-full h-full lg:ps-10 xl:ps-40"
         >
           <h4
             data-aos="fade-right"
-            className="text-3xl  lg:text-4xl xl:text-5xl text-left text-white "
+            className="text-3xl  lg:text-4xl xl:text-5xl text-left text-white w-[80%] lg:w-[60%] xl:w-[60%] 2xl:w-[40%]"
           >
             Agende sua consulta ortopédica especializada
           </h4>
@@ -21,3 +22,5 @@ export const Consulta = () => {
     </div>
   );
 };
+
+/* w-[100%] lg:ps-10 xl:ps-40  lg:p-6  lg:w-[60%] xl:w-[60%] 2xl:w-[40%] */
