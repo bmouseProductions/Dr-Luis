@@ -47,7 +47,7 @@ export const Footer = () => {
         <div className="flex-1 flex flex-col gap-3 lg:items-end text-white">
           <h4 className="text-2xl text-white">Departamentos</h4>
           <p className="text-sm">Ortopedia e Traumatologia</p>
-          <p className="text-sm">Cirurgia de Ombro e Cotovole</p>
+          <p className="text-sm">Cirurgia de Ombro e Cotovelo</p>
           <p className="text-sm">Ultrassonografia Musculoesquelética</p>
         </div>
       </div>

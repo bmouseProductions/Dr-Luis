@@ -18,19 +18,19 @@ export const Sobre = () => {
             <strong className="text-[#00337A]">Luis Paulo Ramos</strong>
           </h1>
           <p className="text-lg text-[#6b6a6a]">
-            Sou graduado em medicina pelo centro universitário de Patos de
-            Minas, Especializado em Ortopedia e Traumatologia pela santa casa de
-            misericórdia de Santos - Sp e subespecializado em cirurgia de ombro
-            e cotovelo pela santa casa de misericórdia de Santos - SP. Sou
-            membro da sociedade brasileira de ortopedia e traumatologia e da
-            sociedade brasileira de cirurgia do ombro e cotovelo, além de Membro
-            fundador da Associação Ortopédica brasileira de ultrassonografia
-            musculoesquelética.
+            Sou graduado em medicina pelo Centro Universitário de Patos de Minas
+            - UNIPAM, especializado em Ortopedia e Traumatologia pela Santa Casa
+            de Misericórdia de Santos - SP e subespecializado em Cirurgia de
+            Ombro e Cotovelo pela Santa Casa de Misericórdia de Santos - SP. Sou
+            membro da Sociedade Brasileira de Ortopedia e Traumatologia (SBOT) e
+            da Sociedade Brasileira de Cirurgia do Ombro e Cotovelo (SBCOC),
+            além de membro fundador da Associação Ortopédica Brasileira de
+            Ultrassonografia Musculoesquelética.
           </p>
           <ul className="list-disc ms-5 text-[#797968] font-semibold">
             <li className="">Especialista em Ortopedia e Traumatologia</li>
-            <li>Subespecializado em cirurgia de ombro e cotovelo</li>
-            <li>Membro da sociedade brasileira de ortopedia e traumatologia</li>
+            <li>Subespecializado em Cirurgia de Ombro e Cotovelo</li>
+            <li>Membro da Sociedade Brasileira de Ortopedia e Traumatologia</li>
           </ul>
           <Button></Button>
         </div>

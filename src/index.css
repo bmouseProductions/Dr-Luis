@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Personaliza a cor do scroll da página */
+html {
+  scrollbar-color: #000a69 #ffff;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar-track {
+  background-color: #000a69;
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #005c8a;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
 .especialidades svg {
   width: 100px !important;
   height: 100px !important;

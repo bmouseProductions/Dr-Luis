@@ -62,7 +62,7 @@ export const Departamento = () => {
     <div
       data-aos-duration="3000"
       data-aos="zoom-in"
-      className=" px-6 lg:p-20 xl:px-80 xl:py-20 flex flex-col gap-10"
+      className=" p-6 lg:p-20 xl:px-40 xl:py-20 2xl:px-80 flex flex-col gap-10"
     >
       <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:items-end lg:justify-between ">
         <div className="lg:w-[50%] flex flex-col gap-5">
@@ -70,8 +70,8 @@ export const Departamento = () => {
             Departamentos e Especializações
           </h1>
           <p className="text-[#797968]">
-            Oferecemos uma gama abrangente de especializações médicas para
-            atender às necessidades de nossos pacientes.
+            Uma gama abrangente de especializações médicas para atender às
+            necessidades de cada paciente.
           </p>
         </div>
         <div>
