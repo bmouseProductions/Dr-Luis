@@ -1,4 +1,4 @@
-import DrLuis from "../../assets/img/ImgDr.webp";
+import DrLuis from "../../assets/img/ImgDr.svg";
 
 export const Card = () => {
   return (
