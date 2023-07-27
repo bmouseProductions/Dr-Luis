@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "Pós Operatório", href: "/pos-operatorio", current: false },
+  { name: "Procedimentos", href: "/cirurgias", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -20,10 +21,15 @@ export default function Header() {
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-20 items-center justify-between">
+                <div className="flex h-24 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <img className="h-10 w-44" src={Logo} alt="Dr Luis" />
+                      <Link to="/">
+                        <img className="h-10 w-44" src={Logo} alt="Dr Luis" />
+                        <p className="text-white font-semibold text-[0.55rem] mt-2 ms-1">
+                          CRM/MG 62030 | TEOT 16449 | RQE 44790
+                        </p>
+                      </Link>
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">

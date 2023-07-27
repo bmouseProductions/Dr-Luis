@@ -1,12 +1,11 @@
 interface Exercicios {
   title: string;
-  exercicios: string[];
   iframeLink?: string;
 }
 
-export const CardVideos = ({ title, exercicios, iframeLink }: Exercicios) => {
+export const CardVideos = ({ title, iframeLink }: Exercicios) => {
   return (
-    <article className="card-video shadow-2xl m-auto h-[350px]">
+    <article className="card-video shadow-2xl m-auto h-[280px]">
       <div className="">
         <iframe
           className=""
@@ -15,15 +14,10 @@ export const CardVideos = ({ title, exercicios, iframeLink }: Exercicios) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
       </div>
-      <div className="card_content h-[170px]">
-        <h1 className="card_title text-lg mb-2 pe-14 ">{title}</h1>
-        <span className="card_subtitle ">
-          {exercicios.map((item, index) => (
-            <li className="font-semibold text-sm" key={index}>
-              {item}
-            </li>
-          ))}
-        </span>
+      <div className="card_content m-auto h-[100px]">
+        <h1 className="card_title text-lg py-3 px-14 text-center m-auto">
+          {title}
+        </h1>
       </div>
     </article>
   );
